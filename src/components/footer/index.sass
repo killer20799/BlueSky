@@ -1,0 +1,60 @@
+footer
+	background: #e7f6fc
+
+	.footer-contact
+		padding-top: 77px
+		padding-bottom: 60px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			height: 5px
+			width: 100%
+			background-image: linear-gradient(90deg, rgb(251,183,49) 0%, rgb(142,197,73) 35%, rgb(0,150,215) 70%, rgb(234,20,140) 100%)
+		h2
+			color: rgb(142, 197, 73)
+			margin-bottom: 10px
+			text-transform: uppercase
+			font-size: 18px
+			font-weight: 700
+		p
+			color: rgb(122, 150, 162)
+			font-size: 15px
+		.col-lg-4
+			display: flex
+			justify-content: center
+			text-align: center
+			flex-direction: column
+			ul
+				list-style-type: none
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-direction: row
+				margin-top: 25px
+				li
+					padding-left: 10px
+					a
+						justify-content: center
+						align-items: center
+						height: 45px
+						width: 45px
+						display: inline-flex
+						border: 1px solid #0096d7
+						border-radius: 50%
+						font-size: 24px
+						color: #0096d7
+						&:hover
+							color: #ffffff
+							background: #0096d7
+					&:first-child
+						padding-left: 0
+	.footer-info
+		p
+			text-align: center
+			border-top: 1px solid rgb(199, 229, 242)
+			width: 100%
+			padding: 20px 0
+			font-size: 15px
+			color: rgb(122, 150, 162)
