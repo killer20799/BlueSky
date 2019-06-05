@@ -2,6 +2,7 @@
 	display: flex
 	justify-content: center
 	width: 100%
+	margin-bottom: 30px
 	a
 		border: 1px solid rgb(234, 20, 140)
 		border-radius: 10px
@@ -25,4 +26,34 @@
 			background: rgb(234, 20, 140)
 		&:last-child
 			margin-right: 0
-
+.image-gallery
+	.gallery-img
+		figure
+			text-align: center
+			.boximg
+				overflow: hidden
+				img
+					width: 100%
+					height: 225px
+					transition: .5s all ease-in-out
+					@media (max-width: 767.98px)
+						height: 175px
+					@media (max-width: 575.98px)
+						height: 225px
+			figcaption
+				h2
+					text-align: left
+					margin-top: 20px
+					margin-bottom: 30px
+					font-size: 18px
+					color: rgb(51, 51, 51)
+					+line(2)
+			&:hover
+				.boximg
+					img
+						transform: scale(1.2)
+						filter: none
+						transition: .5s all ease-in-out
+				figcaption
+					h2
+						color: rgb(0, 150, 215)
