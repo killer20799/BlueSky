@@ -1,0 +1,28 @@
+.news-list
+	display: flex
+	justify-content: center
+	width: 100%
+	a
+		border: 1px solid rgb(234, 20, 140)
+		border-radius: 10px
+		height: 48px
+		width: 198px
+		display: inline-flex
+		justify-content: center
+		align-items: center
+		margin-right: 20px
+		font-size: 20px
+		color: rgb(234, 20, 140)
+		@media (max-width: 991.98px)
+			font-size: 15px
+		@media (max-width: 575.98px)
+			font-size: 12px
+		&:hover
+			color: #ffffff
+			background: rgb(234, 20, 140)
+		&.active
+			color: #ffffff
+			background: rgb(234, 20, 140)
+		&:last-child
+			margin-right: 0
+
