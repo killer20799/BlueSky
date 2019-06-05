@@ -21,16 +21,48 @@ p ,ul ,h1,h2,h3,h4,h5,h6,figure,div, *
 	box-sizing: border-box
 html, body
 	font-size: 16px
-	line-height: 24px
-	font-weight: 500
+	line-height: 1.5
+	font-weight: 600
 	font-family: 'Nunito', sans-serif
 
 	main
 		overflow: hidden
-		margin-top: 75px
+		margin-top: 70px
 		min-height: 500px
 		@media (min-width: 992px)
 			margin-top: 115px
 	img
 		max-width: 100%
 		height: auto
+.bluesky-section
+	padding-top: 75px
+	padding-bottom: 80px
+	@media (max-width: 991.98px)
+		padding-top: 35px
+		padding-bottom: 40px
+	.main-title
+		font-size: 45px
+		color: rgb(0, 150, 215)
+		font-weight: 700
+		text-align: center
+		position: relative
+		padding-bottom: 20px
+		margin-bottom: 30px
+		@media (max-width: 991.98px)
+			font-size: 30px
+		@media (max-width: 767.98px)
+			font-size: 22px
+		&:before
+			height: 20px
+			width: 130px
+			content: ""
+			display: inline-block
+			position: absolute
+			bottom: 0
+			left: 50%
+			background-image: url('../img/icon-heading.png')
+			background-repeat: no-repeat
+			transform: translateX(-50%)
+.container
+	@media (min-width: 1200px)
+		max-width: 1240px
