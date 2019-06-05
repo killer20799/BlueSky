@@ -93,6 +93,11 @@ $(document).ready(function () {
 		desktopMethod: 'prependTo',
 		breakpoint: 768,
 	}).watch()
+
+
+	studentActiveSlide();
+	parentsActiveSlide();
+	otherNewsSlide();
 	Header.toggleSearchBox();
 	Header.moveContactInfo();
 	Header.moveLanguageBox();
@@ -164,3 +169,66 @@ function closeAllSelect(elmnt) {
 	}
 }
 document.addEventListener("click", closeAllSelect);
+function studentActiveSlide() {
+	return new Swiper('.student-active .swiper-container', {
+		slidesPerView: 4,
+		spaceBetween: 30,
+		navigation: {
+			nextEl: '.student-active .btn-next',
+			prevEl: '.student-active .btn-prev',
+		},
+		breakpoints: {
+			992: {
+				slidesPerView: 3
+			},
+			768: {
+				slidesPerView: 2
+			},
+			576: {
+				slidesPerView: 1
+			}
+		}
+	})
+};
+function parentsActiveSlide() {
+	return new Swiper('.parents-active .swiper-container', {
+		slidesPerView: 4,
+		spaceBetween: 30,
+		navigation: {
+			nextEl: '.parents-active .btn-next',
+			prevEl: '.parents-active .btn-prev',
+		},
+		breakpoints: {
+			992: {
+				slidesPerView: 3
+			},
+			768: {
+				slidesPerView: 2
+			},
+			576: {
+				slidesPerView: 1
+			}
+		}
+	})
+};
+function otherNewsSlide() {
+	return new Swiper('.other-news .swiper-container', {
+		slidesPerView: 4,
+		spaceBetween: 30,
+		navigation: {
+			nextEl: '.other-news .btn-next',
+			prevEl: '.other-news .btn-prev',
+		},
+		breakpoints: {
+			992: {
+				slidesPerView: 3
+			},
+			768: {
+				slidesPerView: 2
+			},
+			576: {
+				slidesPerView: 1
+			}
+		}
+	})
+};
