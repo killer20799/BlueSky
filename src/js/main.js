@@ -93,6 +93,7 @@ $(document).ready(function () {
 		desktopMethod: 'prependTo',
 		breakpoint: 768,
 	}).watch()
+	progressSlide();
 	studentAchievementSlide();
 	studentSlide();
 	studentActiveSlide();
@@ -255,6 +256,27 @@ function studentAchievementSlide() {
 			992: {
 				slidesPerView: 3
 			},
+			768: {
+				slidesPerView: 1
+			},
+			576: {
+				slidesPerView: 1
+			}
+		}
+	})
+};
+function progressSlide() {
+	return new Swiper('.progress-slider .swiper-container', {
+		slidesPerView: 2.5,
+		spaceBetween: 50,
+		centeredSlides: true,
+		speed: 2000,
+		loop: true,
+		navigation: {
+			nextEl: '.swiper-buttons .btn-next',
+			prevEl: '.swiper-buttons .btn-prev',
+		},
+		breakpoints: {
 			768: {
 				slidesPerView: 1
 			},
