@@ -93,8 +93,8 @@ $(document).ready(function () {
 		desktopMethod: 'prependTo',
 		breakpoint: 768,
 	}).watch()
-
-
+	studentAchievementSlide();
+	studentSlide();
 	studentActiveSlide();
 	parentsActiveSlide();
 	otherNewsSlide();
@@ -225,6 +225,38 @@ function otherNewsSlide() {
 			},
 			768: {
 				slidesPerView: 2
+			},
+			576: {
+				slidesPerView: 1
+			}
+		}
+	})
+};
+function studentSlide() {
+	return new Swiper('.student .swiper-container', {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+		}
+	})
+};
+
+function studentAchievementSlide() {
+	return new Swiper('.student-achievement .swiper-container', {
+		slidesPerView: 3,
+		spaceBetween: 30,
+		navigation: {
+			nextEl: '.student-achievement .btn-next',
+			prevEl: '.student-achievement .btn-prev',
+		},
+		breakpoints: {
+			992: {
+				slidesPerView: 3
+			},
+			768: {
+				slidesPerView: 1
 			},
 			576: {
 				slidesPerView: 1
