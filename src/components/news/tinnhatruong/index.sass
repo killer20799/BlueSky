@@ -1,0 +1,131 @@
+.news-school
+	padding-bottom: 0
+	.news-item
+		overflow: hidden
+		border: 1px solid rgb(235, 235, 235)
+		border-radius: 10px
+		margin-bottom: 20px
+		&:hover
+			+box-shadow
+			figure
+				figcaption
+					h2
+						a
+							color: rgb(0, 150, 215)
+		figure
+			.boximg
+				height: 165px
+				img
+					height: 100%
+					width: 100%
+					object-fit: cover
+				@media (max-width: 1199.98px)
+					height: 150px
+			figcaption
+				margin-top: 20px
+				margin-left: 20px
+				margin-right: 20px
+				margin-bottom: 15px
+				h2
+					font-size: 18px
+					margin-top: 20px
+					a
+						color: rgb(51, 51, 51)
+				date
+					display: block
+					color: rgb(153, 153, 153)
+	.main-news, .normal-news
+		@media (min-width: 992px)
+			flex: 0 0 50%
+			max-width: 50%
+	.main-news
+		padding-left: 10px
+		padding-right: 10px
+		.news-item
+			overflow: hidden
+			figure
+				.boximg
+					height: 325px
+					@media (max-width: 1199.98px)
+						height: 260px
+					img
+						height: 100%
+						width: 100%
+						object-fit: cover
+				figcaption
+					margin-left: 20px
+					margin-right: 20px
+					h2
+						font-size: 25px
+						margin-top: 20px
+						margin-bottom: 10px
+						a
+							color: rgb(51, 51, 51)
+					p
+						font-size: 15px
+						color: rgb(102, 102, 102)
+						margin-bottom: 15px
+						+line(5)
+					date
+						border-top: 1px solid rgb(235, 235, 235)
+						padding-top: 20px
+						display: block
+						color: rgb(153, 153, 153)
+.student-active, .parents-active, .other-news
+	.heading-line
+		margin-bottom: 30px
+		border-bottom: 1px solid rgb(235, 235, 235)
+		h2
+			padding-left: 30px
+			padding-right: 30px
+			display: inline-block
+			padding-top: 15px
+			padding-bottom: 10px
+			border-top-right-radius: 10px
+			border-top-left-radius: 10px
+			background: #0096d7
+			font-size: 20px
+			color: #ffffff
+	.news-item
+		overflow: hidden
+		border: 1px solid rgb(235, 235, 235)
+		border-radius: 10px
+		margin-bottom: 20px
+		figure
+			.boximg
+				height: 165px
+				@media (max-width: 1199.98px)
+					height: 150px
+				img
+					height: 100%
+					width: 100%
+					object-fit: cover
+			figcaption
+				margin-left: 20px
+				margin-right: 20px
+				h2
+					font-size: 18px
+					margin-top: 20px
+					margin-bottom: 10px
+					+line(2)
+					a
+						color: rgb(51, 51, 51)
+				p
+					font-size: 15px
+					color: rgb(102, 102, 102)
+					margin-bottom: 15px
+					+line(5)
+				date
+					border-top: 1px solid rgb(235, 235, 235)
+					padding-top: 15px
+					padding-bottom: 15px
+					display: block
+					color: rgb(153, 153, 153)
+.parents-active
+	.heading-line
+		h2
+			background: #8ec549
+.other-news
+	.heading-line
+		h2
+			background: #ea148c

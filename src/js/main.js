@@ -179,7 +179,7 @@ function studentActiveSlide() {
 			prevEl: '.student-active .btn-prev',
 		},
 		breakpoints: {
-			992: {
+			1024: {
 				slidesPerView: 3
 			},
 			768: {
@@ -200,7 +200,7 @@ function parentsActiveSlide() {
 			prevEl: '.parents-active .btn-prev',
 		},
 		breakpoints: {
-			992: {
+			1024: {
 				slidesPerView: 3
 			},
 			768: {
@@ -221,7 +221,7 @@ function otherNewsSlide() {
 			prevEl: '.other-news .btn-prev',
 		},
 		breakpoints: {
-			992: {
+			1024: {
 				slidesPerView: 3
 			},
 			768: {
