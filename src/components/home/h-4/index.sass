@@ -1,0 +1,124 @@
+.home-4
+    padding-top: 85px
+    padding-bottom: 90px
+    background: #e7f6fc
+    @media(min-width: 992px)
+        padding-top: 185px
+        padding-bottom: 190px
+    .row
+        margin: 0 -10px
+    .main-nav
+        display: flex
+        overflow-x: auto
+        .item
+            margin: 0 10px
+            padding: 10px
+            background: #fbb731
+            text-align: center
+            cursor: pointer
+            display: flex
+            align-items: center
+            justify-content: center
+            transition: .4s all ease-in-out
+            color: #fff
+            border-top-left-radius: 20px
+            border-top-right-radius: 20px
+            font-size: 15px
+            font-weight: 400
+            min-width: 150px
+            user-select: none
+            &.active, &:hover
+                background: #ea148c
+    .main-content
+        box-shadow: 6px 4px 0 0 rgba(0,0,0,.1)
+        padding: 20px
+        background: #fff
+        position: relative
+        .content-item
+            position: absolute
+            width: 100%
+            transform: translateY(40px)
+            opacity: 0
+            pointer-events: none
+            &.active
+                position: relative
+                transform: translateY(0)
+                transition: .6s ease-in-out
+                opacity: 1
+                pointer-events: initial
+        .item
+            margin-bottom: 20px
+            a
+                text-decoration: none
+                &:hover
+                    figure
+                        box-shadow: 6px 4px 0 0 rgba(0,0,0,.1)
+                        figcaption
+                            .text
+                                h4
+                                    color: #0096d7
+                figure
+                    transition: .4s ease-in-out all
+                    border: 1px solid #ebebeb
+                    border-radius: 10px
+                    .image
+                        img
+                            width: 100%
+                    figcaption
+                        padding: 15px
+                        padding-bottom: 0
+                        .text
+                            h4
+                                transition: .4s ease-in-out all
+                                font-size: 18px
+                                color: #333333
+                                margin-bottom: 10px
+                                display: -webkit-box
+                                -webkit-line-clamp: 2
+                                -webkit-box-orient: vertical
+                                overflow: hidden
+                                text-overflow: ellipsis
+                            p
+                                font-size: 15px
+                                color: #666
+                                display: -webkit-box
+                                -webkit-line-clamp: 5
+                                -webkit-box-orient: vertical
+                                overflow: hidden
+                                text-overflow: ellipsis
+                        .time
+                            margin-top: 20px
+                            border-top: 1px solid #ebebeb
+                            color: #999
+                            padding: 10px 0
+                            font-size: 14px
+                            time
+                                font-weight: 400
+    .viewMore
+        margin-top: 35px
+        text-align: center
+        a
+            padding: 10px 60px
+            background: #0096d7
+            color: #fff
+            font-size: 20px
+            border-radius: 10px
+            transition: .4s all ease-in-out
+            &:hover
+                background: #15516b
+    @media(min-width: 768px)
+        .main-nav
+            justify-content: center
+            .item
+                padding: 15px 30px
+                font-size: 18px
+        .main-content
+            padding: 30px
+            padding-bottom: 60px
+            border-radius: 20px
+            .item
+                a
+                    figure
+                        figcaption
+                            padding: 20px
+                            padding-bottom: 0
