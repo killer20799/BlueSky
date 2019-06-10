@@ -1,0 +1,100 @@
+.student-achievement
+	.sub-title
+		margin-bottom: 65px
+		p
+			@media (min-width: 992px)
+				margin-right: 25%
+				margin-left: 25%
+	.swiper-slide
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		figure
+			display: flex
+			justify-content: center
+			flex-direction: column
+			align-items: flex-start
+			.boximg
+				height: 190px
+				width: 190px
+				border: 5px solid #ebebeb
+				border-radius: 50%
+				overflow: hidden
+				img
+					height: 100%
+					width: 100%
+					object-fit: cover
+			figcaption
+				text-align: center
+				opacity: 0
+				margin-top: 25px
+				h3
+					font-size: 20px
+					color: rgb(51, 51, 51)
+				p
+					font-size: 15px
+					color: rgb(51, 51, 51)
+	.swiper-slide-next
+		justify-content: center
+		figure
+			align-items: center
+			.boximg
+				+box-shadow
+				height: 335px
+				width: 335px
+				border: 5px solid #0096d7
+				border-radius: 50%
+				overflow: hidden
+				@media (max-width: 1024px)
+					height: 265px
+					width: 265px
+				img
+					height: 100%
+					width: 100%
+					object-fit: cover
+			figcaption
+				opacity: 1
+				text-align: center
+	.swiper-slide-active
+		justify-content: flex-end
+		figure
+			align-items: flex-end
+	.swiper-slide
+		@media (max-width: 767.98px)
+			justify-content: center
+			figure
+				align-items: center
+				.boximg
+					+box-shadow
+					border: 5px solid #0096d7
+					height: 300px
+					width: 300px
+				figcaption
+					opacity: 1
+.other-achievement
+	padding-bottom: 20px
+	background-image: url('../img/home/home-bg-5.png')
+	background-size: contain
+	background-position: center
+	figure
+		display: flex
+		align-items: center
+		border-radius: 10px
+		border: 1px solid rgb(235, 235, 235)
+		overflow: hidden
+		margin-bottom: 20px
+		.boximg
+			height: 110px
+			width: 190px
+			img
+				height: 100%
+				width: 100%
+				object-fit: cover
+		figcaption
+			margin-left: 20px
+			h3
+				color: rgb(51, 51, 51)
+				font-size: 16px
+			p
+				font-size: 14px
+				color: rgb(102, 102, 102)

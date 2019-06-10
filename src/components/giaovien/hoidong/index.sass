@@ -1,0 +1,41 @@
+.assembly
+	.hoidong
+		margin-top: 50px
+	figure
+		border-radius: 20px
+		border: 2px solid #cbcbcb
+		margin-bottom: 90px
+		+tran(.5s)
+		&:hover
+			border: 2px solid #0096d7
+			+box-shadow
+			+tran(.5s)
+			.boximg
+				border: 2px solid #0096d7
+				+tran(.5s)
+		.boximg
+			+tran(.5s)
+			width: 122px
+			height: 122px
+			border: 2px solid transparent
+			border-radius: 50%
+			overflow: hidden
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translate(-50%, -50%)
+			img
+				height: 100%
+				width: 100%
+				object-fit: cover
+		figcaption
+			margin-top: 75px
+			text-align: left
+			margin-right: 45px
+			margin-left: 45px
+			margin-bottom: 40px
+			h3
+				text-align: center
+			h4
+				text-align: center
+				margin-bottom: 25px
