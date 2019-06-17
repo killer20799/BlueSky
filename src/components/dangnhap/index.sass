@@ -1,67 +1,38 @@
 .dangnhap
     .sub-title
-        margin-bottom: 20px
-    .wrapper
-        &:nth-child(1)
-            .login-form
-                background: #e7f6fc
-        &:nth-child(2)
-            .login-form
-                background: #e6f3e8
-        &:nth-child(3)
-            .login-form
-                background: #fbf0b1
-        + .wrapper
-            margin-top: 30px
+    .item
+        margin-bottom: 10px
+        figure
+            box-shadow: 6px 6px 0 0 rgba(0,0,0,.1)
+            height: 100%
+            padding: 20px
+            transition: .4s ease-in-out all
+            border-radius: 10px
+            text-align: center
             @media(min-width: 1025px)
-                margin-top: 60px
-    .boximg
-        height: 100%
-        display: flex
-        justify-content: center
-        align-items: center
-        text-align: center
-    .login-form
-        padding: 30px
-        .form-group
-            margin-top: 20px
-            label
-                display: flex
-                font-size: 14px
-                font-weight: 700
-                margin-bottom: 5px
-                @media(min-width: 768px)
-                    font-size: 18px
-            input
-                width: 100%
-                padding: 5px 20px
-                border-radius: 22.5px
-                font-size: 14px
-                border: 1px solid #e1e1e1
-                @media(min-width: 768px)
-                    font-size: 16px
-                &:focus
-                    outline: none
-        .forget
-            margin-top: 15px
-            text-align: center
-            a
-                color: #0096d7
-                font-size: 15px
-                text-decoration: underline
-        .login
-            margin-top: 20px
-            text-align: center
-            button
-                border-radius: 10px
-                background: #0096d7
-                color: #fff
-                font-weight: 700
-                padding: 6px 50px
-                border: none
-    @media(min-width: 768px)
-        .login-form
-            padding: 60px
-    @media(min-width: 992px)
-        .login-form
-            padding: 80px
+                padding: 50px
+            &.gv
+                background: #e7f6fc
+            &.nv
+                background: #e6f3e8
+                figcaption
+                    a
+                        background: #ea148c
+            &.khac
+                background: #fbf0b1
+            figcaption
+                padding-top: 10px
+                h5
+                    font-size: 24px
+                    font-weight: 700
+                a
+                    margin-top: 20px
+                    padding: 10px
+                    width: 100%
+                    max-width: 220px
+                    background: #0096d7
+                    border-radius: 10px
+                    color: #fff
+                    display: inline-block
+            &:hover
+                transform: translateY(-20px)

@@ -127,4 +127,13 @@
   <data name="Workplace" xml:space="preserve">
     <value>Nơi làm việc</value>
   </data>
+    <data name="Apply" xml:space="preserve">
+    <value>Ứng tuyển ngay</value>
+  </data>
+  <data name="DownloadApp" xml:space="preserve">
+    <value>Tải mẫu đơn xin việc</value>
+  </data>
+  <data name="SubmitDirect" xml:space="preserve">
+    <value>Nộp trực tiếp</value>
+  </data>
 </root>

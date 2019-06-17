@@ -578,21 +578,14 @@ function newDetailSlide() {
     })
 }
 
-function lienHeAccordian() {
-    $('.lienhe .dealer .item .title').on('click', function() {
-        $('.lienhe .dealer .item .content').removeClass('active')
-        $('.lienhe .dealer .item').removeClass('active')
-        $(this).siblings('.content').addClass('active')
-    })
-}
-
 function contactMap() {
     var firstMap = $('.lienhe .dealer .item:first-child').attr('data-map')
     $('.lienhe .map iframe').attr('src', firstMap)
     $('.lienhe .dealer .item').on('click', function() {
+        $('.lienhe .dealer .item').removeClass('active')
         var e = $(this).attr('data-map')
         $('.lienhe .map iframe').attr('src', e)
-        $(this).siblings('.content').addClass('active')
+        $(this).addClass('active')
     })
 }
 $(document).ready(function() {
@@ -623,7 +616,6 @@ $(document).ready(function() {
     chuongTrinhHocSlide()
     tuyenDungSlide()
     newDetailSlide()
-    lienHeAccordian()
     countUp()
     contactMap()
     equalHeight('.home-4 .main-content .item a figure figcaption .text')

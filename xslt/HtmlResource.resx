@@ -127,4 +127,13 @@
   <data name="Workplace" xml:space="preserve">
     <value>Workplace</value>
   </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Apply now</value>
+  </data>
+  <data name="DownloadApp" xml:space="preserve">
+    <value>Download job application</value>
+  </data>
+  <data name="SubmitDirect" xml:space="preserve">
+    <value>Submit directly</value>
+  </data>
 </root>

@@ -20,13 +20,13 @@
                             <div class="FullContent">
                                 <xsl:value-of select="/NewsDetail/FullContent" disable-output-escaping='yes'></xsl:value-of>
                             </div>
-                            <div class="link"><a class="ungtuyen" href="javascript:void(0)">Ứng tuyển ngay</a>
+                            <div class="link"><a class="ungtuyen" href="javascript:void(0)"><xsl:value-of select="/NewsDetail/Apply"></xsl:value-of></a>
                                 <p>hoặc</p>
                                 <a class="mauxinviec" download=''>
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="/NewsDetail/FileUrl"></xsl:value-of>
                                     </xsl:attribute>
-                                Tải mẫu đơn xin việc<br /><span>(Nộp trực tiếp)</span></a>
+                                <xsl:value-of select="/NewsDetail/DownloadApp"></xsl:value-of><br /><span>(<xsl:value-of select="/NewsDetail/SubmitDirect"></xsl:value-of>)</span></a>
                             </div>
                             <div class="form-apply">
                                 <iframe>

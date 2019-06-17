@@ -134,11 +134,12 @@ Facebook: https://fb.com/canhcam.vn
                                 </div>
                                 <div class="dangnhap">
                                     <em class="mdi mdi-lock-open"></em>
-                                    <portal:LoginLink ID="LoginLink" runat="server" RenderAsListItem="true" listitemcss="login-link fas fa-user-circle" />
+                                    <portal:ModuleWrapper ID="mdl243" runat="server" ConfigureModuleId="243" />
+                                    <!-- <portal:LoginLink ID="LoginLink" runat="server" RenderAsListItem="true" listitemcss="login-link fas fa-user-circle" /> -->
                                     <!-- <portal:RegisterLink ID="RegisterLink" runat="server" RenderAsListItem="true"
 												listitemcss="register-link" /> -->
-                                    <portal:welcomemessage id="WelcomeMessage" runat="server" wrapinprofilelink="true" profilelink="~/Account/UserProfile.aspx" RenderAsListItem="true" listitemcss="welcome-link fas fa-user-circle" />
-                                    <portal:LogoutLink ID="LogoutLink" runat="server" RenderAsListItem="true" listitemcss="logout-link fas fa-sign-out-alt" />
+                                    <!-- <portal:welcomemessage id="WelcomeMessage" runat="server" wrapinprofilelink="true" profilelink="~/Account/UserProfile.aspx" RenderAsListItem="true" listitemcss="welcome-link fas fa-user-circle" />
+                                    <portal:LogoutLink ID="LogoutLink" runat="server" RenderAsListItem="true" listitemcss="logout-link fas fa-sign-out-alt" /> -->
                                 </div>
                             </div>
                         </div>
