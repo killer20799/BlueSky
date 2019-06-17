@@ -1,0 +1,73 @@
+.news-detail
+    .heading
+        margin-bottom: 30px
+        h2
+            font-size: 18px
+            margin-bottom: 5px
+        date
+            font-size: 13px
+            color: #999999
+    .jssocials-share-logo
+        font-size: 14px
+    .jssocials-share-link
+        width: 80px
+        border-radius: 5px
+    .otherNews
+        margin-top: 40px
+        figure
+            border: 1px solid #ebebeb
+            border-radius: 10px
+            overflow: hidden
+            figcaption
+                padding: 20px
+                h4
+                    font-size: 16px
+                    color: #333333
+                date
+                    font-size: 13px
+                    color: #999
+    .sub-title
+        margin-bottom: 20px
+    .swiper-nav
+        margin-top: 30px
+        display: flex
+        justify-content: center
+        .swiper-btn
+            width: 40px
+            height: 40px
+            text-align: center
+            line-height: 40px
+            cursor: pointer
+            &:focus
+                outline: none
+            img
+                // filter: invert(70%) sepia(58%) saturate(0%) hue-rotate(192deg) brightness(104%) contrast(85%)
+                // opacity: .5
+    @media(min-width: 1025px)
+        .swiper-nav
+            margin-top: 0
+            .swiper-btn
+                position: absolute
+                top: 50%
+                width: 60px
+                img
+                    transition: .4s ease-in-out all
+                    filter: invert(70%) sepia(58%) saturate(0%) hue-rotate(192deg) brightness(104%) contrast(85%)
+                    opacity: .5
+                &:hover
+                    img
+                        filter: initial
+                        opacity: 1
+                &.swiper-left
+                    right: 100%
+                &.swiper-right
+                    left: 100%
+    @media(min-width: 768px)
+        .heading
+            h2
+                font-size: 30px
+        .otherNews
+            figure
+                figcaption
+                    h4
+                        font-size: 18px

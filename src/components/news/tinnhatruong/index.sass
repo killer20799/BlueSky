@@ -27,20 +27,20 @@
 				margin-right: 20px
 				margin-bottom: 15px
 				h2
-					font-size: 18px
+					font-size: 16px
 					margin-top: 20px
+					@media(min-width: 1025px)
+						font-size: 18px
 					a
 						color: rgb(51, 51, 51)
 				date
 					display: block
+					font-size: 13px
 					color: rgb(153, 153, 153)
-	.main-news, .normal-news
-		@media (min-width: 992px)
-			flex: 0 0 50%
-			max-width: 50%
 	.main-news
-		padding-left: 10px
-		padding-right: 10px
+		margin-bottom: 0
+		@media(min-width: 1025px)
+			margin-bottom: 60px
 		.news-item
 			overflow: hidden
 			figure
@@ -56,22 +56,25 @@
 					margin-left: 20px
 					margin-right: 20px
 					h2
-						font-size: 25px
+						font-size: 16px
 						margin-top: 20px
 						margin-bottom: 10px
+						@media(min-width: 1025px)
+							font-size: 25px
 						a
 							color: rgb(51, 51, 51)
 					p
-						font-size: 15px
+						font-size: 14px
 						color: rgb(102, 102, 102)
 						margin-bottom: 15px
 						+line(5)
 					date
 						border-top: 1px solid rgb(235, 235, 235)
-						padding-top: 20px
+						padding-top: 15px
 						display: block
 						color: rgb(153, 153, 153)
-.student-active, .parents-active, .other-news
+.student-active, .parents-active, .other-news, .NewsChild
+	padding-top: 0
 	.heading-line
 		margin-bottom: 30px
 		border-bottom: 1px solid rgb(235, 235, 235)
@@ -86,11 +89,15 @@
 			background: #0096d7
 			font-size: 20px
 			color: #ffffff
+			a
+				color: #fff
 	.news-item
+		margin-bottom: 10px
 		overflow: hidden
 		border: 1px solid rgb(235, 235, 235)
 		border-radius: 10px
-		margin-bottom: 20px
+		@media(min-width: 1025px)
+			margin-bottom: 0
 		figure
 			.boximg
 				height: 165px
@@ -121,6 +128,10 @@
 					padding-bottom: 15px
 					display: block
 					color: rgb(153, 153, 153)
+.NewsChild
+	padding-top: 35px
+	@media(min-width: 768px)
+		padding-top: 75px
 .parents-active
 	.heading-line
 		h2

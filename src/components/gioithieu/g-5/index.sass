@@ -1,0 +1,126 @@
+.gioithieu-5
+    position: relative
+    background: url('../img/home/home-bg-5.png')
+    background-size: cover
+    background-position: center center
+    &:before
+        content: ''
+        height: 50px
+        width: 100%
+        background: url('../img/gioithieu/cloud-1.png')
+        background-size: cover
+        background-position: center center
+        position: absolute
+        top: 100%
+        left: 0
+        @media(min-width: 768px)
+            height: 125px
+    .main-wrap
+        position: relative
+        a 
+            text-decoration: none
+            &:hover
+                figure
+                    transform: translateY(-30px)
+                    box-shadow: 6px 4px 0 0 rgba(0,0,0,.1)
+                    .name
+                        h3
+                            background: #ea148c
+            figure
+                transition: .5s ease-in-out all
+                padding: 20px
+                border: 1px solid #ebebeb
+                border-radius: 20px
+                .image
+                    border-radius: 50%
+                    margin: 0 auto
+                    overflow: hidden
+                    width: 200px
+                    height: 200px
+                    box-shadow: 8px 6px 0 0 rgba(0,0,0,.1)
+                    img
+                        height: 100%
+                        width: 100%
+                        object-fit: cover
+                .name
+                    margin-top: -30px
+                    text-align: center
+                    h3
+                        transition: .5s ease-in-out all
+                        border-radius: 15px
+                        padding: 15px 60px
+                        background: #fbb731
+                        text-transform: uppercase
+                        color: #fff
+                        font-size: 20px
+                        font-weight: 500
+                        display: inline-block
+                figcaption
+                    padding: 30px 0 20px
+                    p
+                        color: #333
+                        span
+                            color: #0096d7
+                    ul
+                        margin-top: 30px
+                        padding-left: 0
+                        list-style: none
+                        li
+                            margin-bottom: 10px
+                            font-size: 15px
+                            display: flex
+                            align-items: baseline
+                            color: #666
+                            em
+                                font-size: 12px
+                                margin-right: 15px
+                                color: #0096d7
+    .swiper-slide
+        height: auto
+        .item
+            height: 100%
+            a
+                display: block
+                height: 100%
+                figure
+                    height: 100%
+    .swiper-nav
+        margin-top: 30px
+        display: flex
+        justify-content: center
+        .swiper-btn
+            width: 40px
+            height: 40px
+            text-align: center
+            line-height: 40px
+            cursor: pointer
+            &:focus
+                outline: none
+            img
+                // filter: invert(70%) sepia(58%) saturate(0%) hue-rotate(192deg) brightness(104%) contrast(85%)
+                // opacity: .5
+    @media(min-width: 1025px)
+        .swiper-nav
+            .swiper-btn
+                position: absolute
+                top: 50%
+                width: 60px
+                img
+                    transition: .4s ease-in-out all
+                    filter: invert(70%) sepia(58%) saturate(0%) hue-rotate(192deg) brightness(104%) contrast(85%)
+                    opacity: .5
+                &:hover
+                    img
+                        filter: initial
+                        opacity: 1
+                &.swiper-left
+                    right: 100%
+                &.swiper-right
+                    left: 100%
+    @media(min-width: 768px)
+        .swiper-container
+            padding-top: 30px
+            .item
+                a
+                    figure
+                        padding: 30px

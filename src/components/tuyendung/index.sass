@@ -1,4 +1,17 @@
 .recruitment
+	position: relative
+	&:after
+        content: ''
+        width: 100%
+        height: 50px
+        background: url('/Data/Sites/1/medheight: 125px-1.png')
+        position: absolute
+        top: 100%
+        left: 0
+        background-size: cover
+        background-position: center center
+        @media(min-width: 768px)
+            height: 125px
 	.staff-recruit, .teacher-recruit
 		h2
 			text-align: center
@@ -18,7 +31,7 @@
 				border-bottom-left-radius: 10px
 				overflow: hidden
 				.boximg
-					height: 110px
+					height: 125px
 					width: 190px
 					img
 						height: 100%
@@ -28,6 +41,8 @@
 					margin-left: 20px
 					margin-top: auto
 					margin-bottom: auto
+					a
+						color: #333
 					h2
 						font-size: 16px
 						color: rgb(51, 51, 51)
@@ -45,3 +60,101 @@
 	.teacher-recruit
 		@media (max-width: 991.98px)
 			margin-top: 30px
+.workplace
+	background: #e7f6fc
+	padding-top: 75px
+	padding-bottom: 80px
+	@media(min-width: 768px)
+		padding-top: 185px
+		padding-bottom: 190px
+	.sub-title
+		margin-bottom: 0
+	.row
+		justify-content: center
+	.slide
+        position: relative
+        margin-top: 35px
+        .swiper-container
+            overflow: visible
+        .swiper-wrapper
+            display: flex
+            align-items: center
+            @media(min-width: 768px)
+                .swiper-slide
+                    background: #0096d7
+                    height: 400px
+                    overflow: hidden
+                    img
+                        width: 100%
+                        opacity: .4
+                        object-fit: cover
+                        transition: .4s ease-in-out all
+                        height: 100%
+                    &.swiper-slide-active
+                        height: 100%
+                        img
+                            opacity: 1
+        .swiper-nav
+            margin-top: 30px
+            display: flex
+            justify-content: center
+            .swiper-btn
+                width: 40px
+                height: 40px
+                text-align: center
+                line-height: 40px
+                cursor: pointer
+                &:focus
+                    outline: none
+	@media(min-width: 1025px)
+		.slide
+			.swiper-nav
+				.swiper-btn
+					z-index: 33
+					position: absolute
+					top: 50%
+					text-align: center
+					width: 60px
+					transform: translateY(-50%)
+					img
+						transition: .4s ease-in-out all
+						opacity: .4
+						filter: invert(70%) sepia(58%) saturate(0%) hue-rotate(192deg) brightness(104%) contrast(85%)
+					&:hover
+						img
+							filter: initial
+							opacity: 1
+					&.swiper-left
+						right: 100%
+					&.swiper-right
+						left: 100%
+.chedodaingo
+	position: relative 
+	&:after
+        content: ''
+        height: 50px
+        width: 100%
+        background: url('/Data/Sites/1/medheight: 125px-2.png')
+        background-size: cover
+        background-position: center center
+        position: absolute
+        bottom: 100%
+        left: 0
+        @media(min-width: 768px)
+            height: 125px
+	.list-item
+		.item
+			margin-bottom: 20px
+			figure
+				text-align: center
+				figcaption
+					h5
+						margin: 10px 0
+						font-size: 16px
+	@media(min-width: 768px)
+		.list-item
+			.item
+				figure
+					figcaption
+						h5
+							font-size: 20px

@@ -1,0 +1,69 @@
+.chuongtrinhhoc-1
+    .row
+        justify-content: center
+    .main-nav
+        display: flex
+        justify-content: center
+        align-items: center
+        .item
+            padding: 6px 10px
+            @media(min-width: 768px)
+                padding: 8px 30px
+                font-size: 18px
+            border: 1px solid #ea148c
+            text-align: center
+            border-radius: 10px
+            margin: 0 10px
+            user-select: none
+            color: #ea148c
+            cursor: pointer
+            font-weight: 700
+            transition: .4s ease-in-out all
+            &.active, &:hover
+                background: #ea148c
+                color: #fff
+    .main-content
+        margin-top: 25px
+        position: relative
+    .desc
+        text-align: center
+    .toddler
+        flex-wrap: wrap
+        margin-top: 25px
+        display: flex
+        justify-content: center
+        .item
+            margin: 0 10px
+            margin-bottom: 10px
+            .image
+                width: 200px
+                height: 200px
+                border: 3px solid #ccc
+                transition: .4s ease-in-out all
+                border-radius: 50%
+                overflow: hidden
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+            figcaption
+                padding-top: 15px
+                text-align: center
+                h5
+                    font-weight: 700
+                    font-size: 15px
+                    margin-bottom: 6px
+            &:hover
+                .image
+                    border-color: #0096d7
+    .content-item
+        transform: translateY(50px)
+        opacity: 0
+        position: absolute
+        pointer-events: none
+        &.active
+            transform: translateY(0)
+            opacity: 1
+            transition: .7s ease-in-out all
+            position: relative
+            pointer-events: initial

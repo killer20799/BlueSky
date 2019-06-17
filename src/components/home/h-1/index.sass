@@ -5,43 +5,40 @@
         box-shadow: 6px 6px 0 0 rgba(0,0,0,.1)
         // border-radius: 15px
         // overflow: hidden
-        background: url('../img/home/home-bg-6.png')
-        .box
-            &:nth-child(even)
-                background: rgba(0,0,0,.1)
-            .item
-                padding: 30px 0
-                display: flex
-                align-items: center
-                .time
-                    color: #fff100
-                    padding: 0 15px
-                    text-align: center
-                    h5
-                        font-size: 64px
-                        font-weight: 300
-                        border-bottom: 1px solid
-                        line-height: 1
-                    p
-                        padding-top: 8px
-                .info
+        background: url('/Data/Sites/1/media/img/home/home-bg-6.png')
+        .item
+            padding: 30px 0
+            display: flex
+            align-items: center
+            .time
+                color: #fff100
+                padding: 0 15px
+                text-align: center
+                h5
+                    font-size: 64px
+                    font-weight: 300
+                    border-bottom: 1px solid
+                    line-height: 1
+                p
+                    padding-top: 8px
+            .info
+                width: 100%
+                padding: 0 20px
+                border-left: 1px solid #a3d761
+                img
                     width: 100%
-                    padding: 0 20px
-                    border-left: 1px solid #a3d761
-                    img
-                        width: 100%
-                    p
-                        color: #fff
-                        font-size: 18px
-                        padding-top: 20px
+                p
+                    color: #fff
+                    font-size: 18px
+                    padding-top: 20px
+                    +line(2)
     @media only screen and (max-width: 1020px) and (min-width: 768px)
         .wrapper
-            .box
-                .item
-                    .time
-                        padding: 0 10px
-                        h5
-                            font-size: 30px
+            .item
+                .time
+                    padding: 0 10px
+                    h5
+                        font-size: 30px
     @media(min-width: 768px)
         .container
             padding: 0 15px
@@ -50,9 +47,12 @@
             position: relative
             z-index: 33
             border-radius: 15px
-    @media(min-width: 992px)
+            .swiper-slide
+                &:nth-child(even)
+                    .item
+                        background: rgba(0,0,0,.1)
+    @media(min-width: 1025px)
         .wrapper
-            .box
-                .item
-                    .time
-                        padding: 0 25px
+            .item
+                .time
+                    padding: 0 25px

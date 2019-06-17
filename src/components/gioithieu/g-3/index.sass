@@ -1,0 +1,40 @@
+.gioithieu-3
+    .item
+        + .item
+            margin-top: 30px
+            @media(min-width: 768px)
+                margin-top: 0
+        figure
+            height: 100%
+            text-align: center
+            padding: 35px
+            border-radius: 20px
+            border: 1px solid
+            transition: .4s ease-in-out all
+            .image
+                margin: 0 auto
+                height: 130px
+                width: 130px
+                border-radius: 50%
+                overflow: hidden
+                box-shadow: 6px 6px 0 0 rgba(0,0,0,.1)
+                img
+                    height: 100%
+                    width: 100%
+                    object-fit: cover
+            figcaption
+                color: #333
+                margin-top: 30px
+            &:hover
+                transform: translateY(-20px)
+                box-shadow: 6px 4px 0 0 rgba(0,0,0,.1)
+        &:nth-child(1)
+            figure
+                border-color: #ea148c
+        &:nth-child(2)
+            figure
+                border-color: #0096d7
+        &:nth-child(3)
+            figure
+                border-color: #8ec549
+            

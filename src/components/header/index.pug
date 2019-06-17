@@ -1,57 +1,58 @@
 header
-	section.top-header
-		.top-header-wrapper
-			.container
-				.top-header-menu
-					ul.contact-info
-						li
-							a.service(href="javascript:void(0)") Hệ thống trường học
-						.custom-select
-							select
-								option MEGA RESIDENCE - QUẬN 9
-								option MEGA RESIDENCE - QUẬN 9
-								option MEGA RESIDENCE - QUẬN 9
-
-						li
-							a.mdi.mdi-phone
-							a(href="tel:+842862571122")
-								span Điện thoại: 
-								span 028. 625 711 22
-						li
-							a.mdi.mdi-lock-open
-							a.login(href="dangnhap.html") Đăng nhập
-	section.main-header
+	.top-wrap
 		.container
-			.main-header-wrapper
-				.logo-wrapper
-					a(href="index.html")
-						img(src="./img/logo.png", alt="logo")
-				.main-header-menu
-					ul.menu-parent
+			.main-wrap
+				.hethong
+					p Hệ thống trường học
+					select
+						option(value="https://www.facebook.com/") MEGA RESIDENCE - QUẬN 9
+						option(value="https://www.facebook.com/") MEGA RESIDENCE - QUẬN 9
+						option(value="https://www.facebook.com/") MEGA RESIDENCE - QUẬN 9
+				.phone
+					em.mdi.mdi-phone
+					p Điện thoại: 
+						a(href="javascript:void(0)") 028. 625 711 22
+				.dangnhap
+					em.mdi.mdi-lock-open
+					a(href="javascript:void(0)") Đăng nhập
+	.bot-wrap
+		.container
+			.main-wrap
+				.logo
+					a(href="javascript:void(0)")
+						img(src="./img/after-logo.png", alt="")
+				.main-list
+					ul
 						li
-							a.active(href="index.html") Home
+							a(href="javascript:void(0)") Trang chủ
 						li
-							a(href="about.html") Giới thiệu
+							a(href="javascript:void(0)") Trang chủ
 						li
-							a(href="program.html") Chương trình học
+							a(href="javascript:void(0)") Trang chủ
 						li
-							a(href="tuyensinh.html") Tuyển sinh
+							a(href="javascript:void(0)") Trang chủ
 						li
-							a(href="news.html") Tin tức
+							a(href="javascript:void(0)") Trang chủ
 						li
-							a(href="tuyendung.html") tuyển dụng
+							a(href="javascript:void(0)") Trang chủ
 						li
-							a(href="lienhe.html") liên hệ
-					.search-wrapper
-						i.fas.fa-search
-						.search-box
-							input(type="text", placeholder="Tìm kiếm thông tin")
-							button
-								span.fas.fa-search
-	.backdrop
-	.container
-		.mobile-header
-			.toggle-menu
-				span
-				span
-				span
+							a(href="javascript:void(0)") Trang chủ
+				.search-main
+					.search-icon
+						em.fas.fa-search
+					.searchbox
+						input(type="text" placeholder='Tìm kiếm..')
+						button(type='submit')
+							em.mdi.mdi-magnify
+	.mobile-nav
+		.container
+			.main-wrap
+				.mobile-logo
+					a(href="javascript:void(0)")
+						img(src="./img/logo.png", alt="")
+				.mobile-toggle
+					.line-1
+					.line-2
+					.line-3
+					.cross
+	.mobile-wrap

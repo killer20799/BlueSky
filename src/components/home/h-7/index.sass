@@ -5,20 +5,20 @@
         content: ''
         height: 50px
         width: 100%
-        background: url('../img/home/cloud-4.png')
+        background: url('/Data/Sites/1/media/img/home/cloud-4.png')
         background-size: cover
         background-position: center center
         position: absolute
         bottom: 100%
         left: 0
         @media(min-width: 768px)
-            height: 110px
+            height: 125px
     .main-nav
         display: flex
         align-items: center
         justify-content: center
         .item
-            padding: 10px 55px
+            padding: 10px
             box-shadow: 0 0 0 1px #ea148c inset
             border-radius: 10px
             margin: 0 10px
@@ -27,6 +27,8 @@
             user-select: none
             transition: .4s ease-in-out all
             font-size: 20px
+            @media(min-width: 1025px)
+                padding: 10px 55px
             &.active
                 background: #ea148c
                 color: #fff
@@ -47,8 +49,25 @@
             .item
                 a
                     text-decoration: none
+                    &:focus
+                        outline: none
                     figure
-                        .video
+                        .image
+                            overflow: hidden
+                            position: relative
+                            img
+                                width: 100%
+                            &:after
+                                content: ''
+                                width: 100%
+                                height: 100%
+                                position: absolute
+                                top: 50%
+                                transition: .4s ease-in-out
+                                left: 50%
+                                background: rgba(0,0,0,.4)
+                                transform: translate(-50%, -50%)
+                        .video,
                             overflow: hidden
                             position: relative
                             img
@@ -64,7 +83,7 @@
                                 background: rgba(0,0,0,.4)
                                 transform: translate(-50%, -50%)
                             &:before
-                                content: url('../img/home/play-btn.png')
+                                content: url('/Data/Sites/1/media/img/home/play-btn.png')
                                 position: absolute
                                 top: 50%
                                 left: 50%
@@ -79,8 +98,10 @@
                         &:hover
                             .video
                                 &:before, &:after
-                                    transform: translate(-50%, -50%) scale(0)
-                                    border-radius: 50%
+                                    opacity: 0
+                            .image
+                                &:before, &:after
+                                    opacity: 0
     .swiper-nav
         margin-top: 30px
         display: flex
@@ -96,7 +117,7 @@
             img
                 // filter: invert(70%) sepia(58%) saturate(0%) hue-rotate(192deg) brightness(104%) contrast(85%)
                 // opacity: .5
-    @media(min-width: 992px)
+    @media(min-width: 1025px)
         .swiper-nav
             .swiper-btn
                 position: absolute
@@ -104,13 +125,11 @@
                 width: 60px
                 transform: translateY(-50%)
                 img
-                    transition: .4s ease-in-out all
-                    filter: invert(70%) sepia(58%) saturate(0%) hue-rotate(192deg) brightness(104%) contrast(85%)
-                    opacity: .5
+                    // transition: .4s ease-in-out all
+                    filter: brightness(0) invert(1)
                 &:hover
                     img
                         filter: initial
-                        opacity: 1
                 &.swiper-left
                     right: 100%
                 &.swiper-right
