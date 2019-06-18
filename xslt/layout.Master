@@ -195,6 +195,18 @@ Facebook: https://fb.com/canhcam.vn
                         <asp:ContentPlaceHolder ID="rightContent" runat="server">
                         </asp:ContentPlaceHolder>
                     </asp:Panel>
+                    <portal:ModuleWrapper ID="mdl1245" runat="server" ConfigureModuleId="1245" />
+                    <div class="modal-wrapper" id="dangkythamquan">
+                        <div class="heading">
+                            <portal:ModuleWrapper ID="mdl1246" runat="server" ConfigureModuleId="1246" />
+
+                            <div class="cloud"><img src="/Data/Sites/1/media/img/cloud.png" alt=""></div>
+                            <div class="close-button" data-fancybox-close><img src="/Data/Sites/1/media/img/close.png" alt=""></div>
+                        </div>
+                        <div class="form-wrap">
+                            <portal:ModuleWrapper ID="mdl1248" runat="server" ConfigureModuleId="1248" />
+                        </div>
+                    </div>
                 </main>
                 <!-- ////////////// End Main ////////////// -->
                 <!-- ////////////// Footer ////////////// -->
@@ -233,6 +245,8 @@ Facebook: https://fb.com/canhcam.vn
 						<asp:ContentPlaceHolder ID="altContent2" runat="server"></asp:ContentPlaceHolder>
 					</asp:Panel> -->
             </div>
+            <script src="/Data/Sites/1/skins/default/js/global.min.js?v=1.0.0"></script>
+            <script src="/Data/Sites/1/skins/default/js/main.min.js?v=1.0.0"></script>
             <!-- ////////////// End Footer ////////////// -->
             <portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">
                 <div class="row">
@@ -264,8 +278,7 @@ Facebook: https://fb.com/canhcam.vn
             <portal:Woopra ID="woopra11" runat="server" />
         </form>
         <!-- ////////////// Javascript Include ////////////// -->
-        <script src="/Data/Sites/1/skins/default/js/global.min.js?v=1.0.0"></script>
-        <script src="/Data/Sites/1/skins/default/js/main.min.js?v=1.0.0"></script>
+
         <script type="text/javascript">
             function HideToolbar() {
                 $(".cmsadminpanel").addClass("toggled"), $(".fa-chevron-circle-right").addClass("fa-rotate-180")

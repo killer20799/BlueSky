@@ -44,9 +44,10 @@
                     color: #666666
                     font: normal normal normal 24px/1 Material Design Icons
             .content
-                margin-top: -105px
+                // margin-top: -105px
+                height: 0
                 opacity: 0
-                padding-top: 10px
+                padding-top: 0
                 padding-left: 45px
                 pointer-events: none
                 p
@@ -71,6 +72,8 @@
                 .content
                     margin-top: 0
                     opacity: 1
+                    padding-top: 10px
+                    height: 100%
                     transition: .5s ease-in-out all
                     pointer-events: initial
     .map
@@ -85,13 +88,14 @@
     padding: 85px 0 40px
     @media(min-width: 768px)
         padding: 185px 0 80px
-#ctl00_mainContent_ctl02_pnlQuestions
+#ctl00_mainContent_ctl02_pnlQuestions, #ctl00_mdl1248_ctl00_pnlQuestions
     display: flex
     flex-wrap: wrap
     margin: 0 -10px
     .qtext, .qdropdown
-        flex: 0 0 50%
-   
+        flex: 0 0 100%
+        @media(min-width: 768px)
+            flex: 0 0 50%
     .form-group
         padding: 0 10px
         margin-bottom: 15px
@@ -114,7 +118,7 @@
     textarea
         border-radius: 10px
         height: 90px
-.ContactForm
+.ContactForm, .form-wrap
     .row
         justify-content: center
     .frm-btn-reset

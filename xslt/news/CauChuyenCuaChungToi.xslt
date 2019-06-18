@@ -4,7 +4,7 @@
     <xsl:template match='/'>
         <section class="home-6 bluesky-section">
             <div class="container">
-                <h2 class="main-title"><xsl:value-of select="/NewsList/ModuleTitle"></xsl:value-of></h2>
+                <h2 class="main-title" data-aos="fade-up"><xsl:value-of select="/NewsList/ModuleTitle"></xsl:value-of></h2>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <xsl:apply-templates select='/NewsList/News'></xsl:apply-templates>
@@ -15,7 +15,10 @@
         </section>
     </xsl:template>
     <xsl:template match='News'>
-        <div class="swiper-slide">
+        <div class="swiper-slide" data-aos="fade-up">
+            <xsl:attribute name="data-aos-delay">
+                <xsl:value-of select="300 * position()"></xsl:value-of>
+            </xsl:attribute>
             <div class="item">
                 <div class="image">
                     <img>

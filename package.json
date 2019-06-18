@@ -15,6 +15,7 @@
 		"@babel/polyfill": "7.2.5",
 		"@babel/preset-env": "7.3.1",
 		"@babel/register": "7.0.0",
+		"aos": "^3.0.0-beta.6",
 		"autoprefixer": "9.4.3",
 		"browser-sync": "2.26.4",
 		"css-declaration-sorter": "4.0.1",

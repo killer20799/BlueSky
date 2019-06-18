@@ -4,7 +4,7 @@
     <xsl:template match='/'>
         <section class="home-1">
             <div class="container">
-                <div class="wrapper">
+                <div class="wrapper" data-aos="fade-up">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <xsl:apply-templates select='/NewsList/News'></xsl:apply-templates>

@@ -4,7 +4,7 @@
     <xsl:template match='/'>
         <section class="home-7 bluesky-section">
             <div class="container">
-                <h2 class="main-title"><xsl:value-of select="/ZoneList/ModuleTitle"></xsl:value-of></h2>
+                <h2 class="main-title"  data-aos="fade-up"><xsl:value-of select="/ZoneList/ModuleTitle"></xsl:value-of></h2>
                 <div class="main-nav">
                     <xsl:apply-templates select='/ZoneList/Zone' mode='Nav'></xsl:apply-templates>
                 </div>
@@ -15,7 +15,10 @@
         </section>
     </xsl:template>
     <xsl:template match='Zone' mode='Nav'>
-        <div class="item">
+        <div class="item" data-aos="fade-down" data-aos-duration="3000">
+            <xsl:attribute name="data-aos-delay">
+                <xsl:value-of select="300 * position()"></xsl:value-of>
+            </xsl:attribute>
             <xsl:attribute name="data-tab">
                 <xsl:value-of select="position()"></xsl:value-of>
             </xsl:attribute>
@@ -54,7 +57,10 @@
         </div>
     </xsl:template>
     <xsl:template match='News' mode='Video'>
-        <div class="swiper-slide">
+        <div class="swiper-slide" data-aos="fade-up">
+             <xsl:attribute name="data-aos-delay">
+                <xsl:value-of select="150 * position()"></xsl:value-of>
+            </xsl:attribute>
             <div class="item">
                 <a data-fancybox=''>
                     <xsl:attribute name="href">
@@ -71,7 +77,10 @@
         </div>
     </xsl:template>
     <xsl:template match='News' mode='Image'>
-        <div class="swiper-slide">
+        <div class="swiper-slide" data-aos="fade-up">
+             <xsl:attribute name="data-aos-delay">
+                <xsl:value-of select="150 * position()"></xsl:value-of>
+            </xsl:attribute>
             <div class="item">
                 <a data-fancybox=''>
                     <xsl:attribute name="href">

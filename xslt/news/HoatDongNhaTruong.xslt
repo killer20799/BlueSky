@@ -4,7 +4,7 @@
     <xsl:template match='/'>
         <div class="home-4 bluesky-section">
             <div class="container">
-                <h2 class="main-title"><xsl:value-of select="/ZoneList/ModuleTitle"></xsl:value-of></h2>
+                <h2 class="main-title" data-aos="fade-up"><xsl:value-of select="/ZoneList/ModuleTitle"></xsl:value-of></h2>
                 <div class="main-wrap">
                     <div class="main-nav">
                         <xsl:apply-templates select='/ZoneList/Zone' mode='Nav'></xsl:apply-templates>
@@ -21,6 +21,9 @@
             <xsl:attribute name="data-tab">
                 <xsl:value-of select="position()"></xsl:value-of>
             </xsl:attribute>
+            <!-- <xsl:attribute name="data-aos-delay">
+                <xsl:value-of select="200 * position()"></xsl:value-of>
+            </xsl:attribute> -->
             <xsl:if test="position() = 1">
                 <xsl:attribute name="class">
                     <xsl:text disable-output-escaping='yes'>item active</xsl:text>
@@ -30,7 +33,7 @@
         </div>
     </xsl:template>
     <xsl:template match='Zone' mode='Content'>
-        <div class="content-item" >
+        <div class="content-item">
              <xsl:attribute name="data-content">
                 <xsl:value-of select="position()"></xsl:value-of>
             </xsl:attribute>
@@ -42,7 +45,7 @@
             <div class="row">
                 <xsl:apply-templates select='News'></xsl:apply-templates>
             </div>
-            <div class="viewMore"><a>
+            <div class="viewMore" data-aos="fade-up"><a>
                 <xsl:attribute name="href">
                     <xsl:value-of select="Url"></xsl:value-of>
                 </xsl:attribute>
@@ -50,7 +53,10 @@
         </div>
     </xsl:template>
     <xsl:template match='News'>
-        <div class="col-sm-6 col-lg-3 item">
+        <div class="col-sm-6 col-lg-3 item" data-aos="fade-down">
+            <xsl:attribute name="data-aos-delay">
+                <xsl:value-of select="200 * position()"></xsl:value-of>
+            </xsl:attribute>
             <a>
                 <xsl:attribute name="href">
                     <xsl:value-of select="Url"></xsl:value-of>
